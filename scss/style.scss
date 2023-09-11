@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@200&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.fondo {
+    width: 100vw; //Ocupa el 100 de nuestra pantalla
+    height: 100vh;
+    background-color: #191c32; //Cambiar este color
+    color: #fff;
+}
+
+header {
+    .menu {
+        a {
+            color: #fff;
+        }
+    }
+
+    .brand {
+        span {
+            color: aqua;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+        .brand{
+            margin-top: -0.4375rem;
+        }
+        .menu {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            li {
+                list-style: none;
+                    a{
+                    color: #fff;
+                    text-decoration: none;
+                    padding:10px 20px ;
+                    &:hover{
+                        background-color: aqua;
+                        color: #191c32;
+                        transition: ease-in .3s;
+                    }
+                }
+            }
+            .activa{
+                color: aqua;
+            }
+        }
+    
+
+    }
+
+ }
+ .main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    align-items: center;
+ }
+ h1{
+    font-size: 3em;
+    span{
+        color: aqua;
+    }
+ }
+ .imagen-perfil{
+    width: 31.25rem;
+    height: auto;
+ }
+.download{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 1.25rem;
+    margin-top: .625rem;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+
+    &:hover{
+        background-color: #fff;
+        box-shadow: none;
+    }
+}
